@@ -1,12 +1,11 @@
 {
-  "name": "Yudith-Leon",
+  "name": "yudith",
   "version": "1.0.0",
   "description": "Api public",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-    
   },
   "author": "YudithKleon",
   "license": "ISC",
