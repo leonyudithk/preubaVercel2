@@ -1,12 +1,14 @@
-const jsonserver = require('json-server');
+const jsonserver = require("json-server");
 const server = jsonserver.create();
-const router = jsonserver.router('ApiProductos.json');
+const router = jsonserver.router("ApiProductos.json");
 const middlewares = jsonserver.defaults();
-
 
 server.use(middlewares);
 server.use(router);
 const port = process.env.PORT || 4000;
 server.listen(port, () => {
-    console.log('JSON Server is running');
-})
+  console.log("JSON Server is running");
+});
+
+// Export the Server API
+module.exports = server;
